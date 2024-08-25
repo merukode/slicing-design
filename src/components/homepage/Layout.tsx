@@ -121,7 +121,7 @@ function Layout() {
                     <img src={green} alt="Green arrow" />
                 </span>
                 <div className='flex gap-10'>
-                    <article className='border-2 shadow-4xl rounded-md border-black p-5 w-full'>
+                    <article className='border-2 shadow-4xl rounded-md border-black p-5 w-full h-64'>
                         <h2>Device Status</h2>
                         <span>
                             <div className='flex my-3 gap-4 items-center'>
