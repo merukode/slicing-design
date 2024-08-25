@@ -4,8 +4,11 @@ import setting from '/setting.svg'
 import template from '/template.svg'
 import yellow from '/yellow-massage.svg'
 import arrow from '/arrow.svg'
+import green from '/green-arrow.svg'
 import { Card } from '../ui/card'
 import { Progress } from '../ui/progress'
+import Timeline from './Timeline'
+import DraggableBox from './DraggableBox'
 // import * as Progress from '@radix-ui/react-progress'
 
 
@@ -88,7 +91,26 @@ function Layout() {
                     </Card>
                 </div>
             </section>
-
+            {/* Below Section */}
+            <section className='px-8 py-5'>
+                <span className='flex gap-5'>
+                    <h1 className='text-2xl font-bold'>Messaging</h1>
+                    <img src={green} alt="Green arrow" />
+                </span>
+                <div className='flex gap-14 mt-10'>
+                    <article className='border-2 rounded-md border-black shadow-md p-5'>
+                        <h2 className='mb-5 text-xl'>Recent Message Sent</h2>
+                        <Timeline />
+                    </article>
+                    <article className='border-2 w-full rounded-md border-black shadow-md p-5'>
+                    <DraggableBox />
+                    </article>
+                </div>
+                <span className='flex gap-5'>
+                    <h1 className='text-2xl font-bold'>Messaging</h1>
+                    <img src={green} alt="Green arrow" />
+                </span>
+            </section>
         </main>
     )
 }

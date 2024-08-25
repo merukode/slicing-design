@@ -19,7 +19,7 @@ import invoices from '/invoice.svg'
 
 const Sidebar: React.FC = () => {
     return (
-      <div className="w-72 bg-gray-100 p-4 shadow-md">
+      <div className="w-80 bg-gray-100 p-4 shadow-md">
         {/* Sidebar Title */}
         <div className='flex justify-between items-center'>
         <h1 className="text-2xl font-bold mb-4">WhatsTrack</h1>
