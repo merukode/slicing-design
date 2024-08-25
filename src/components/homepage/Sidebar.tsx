@@ -43,7 +43,7 @@ const Sidebar: React.FC = () => {
 
         {/* Dashboard Card */}
 
-        <section>
+        <section className='flex flex-col gap-4'>
             <p>Dashboard</p>
             <div>
                 <ul className='ml-10 mt-3 flex flex-col gap-4'>

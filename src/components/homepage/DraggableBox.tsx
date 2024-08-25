@@ -49,7 +49,7 @@ const App: React.FC = () => {
         <span className="text-xl">Reminder</span>
         <button 
           onClick={() => setIsAdding(true)}
-          className="border-green-400  border-2 flex  text-white px-4 py-2 rounded items-center gap-3 text-[#00C9B1] font-bold"
+          className="border-green-400  border-2 flex  px-4 py-2 rounded items-center gap-3 text-[#00C9B1] font-bold"
         >
           <img src={add} alt="plus" className="w-6 h-6" />
           ADD
@@ -73,11 +73,11 @@ const App: React.FC = () => {
         </div>
       )}
       <article className='overflow-y-scroll h-96'>
-      <div className="space-y-2 mt-16">
+      <div className="space-y-6 mt-16">
         {todos.map(todo => (
           <div 
             key={todo.id}
-            className="flex items-center p-4 border border-gray-300 rounded bg-white"
+            className="flex items-center p-5 border border-gray-300 rounded bg-white"
           >
             <img src={dots} alt="dot" className="w-4 h-4 mr-3" />
             <input
