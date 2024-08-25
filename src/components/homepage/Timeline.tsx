@@ -1,10 +1,8 @@
-import React from 'react';
-
 interface TimelineItemProps {
   time: string;
   title: string;
   description: string;
-  isActive?: boolean; // New prop to determine if the item is active
+  isActive?: boolean; // Prop for last item is active
   isLast?: boolean; // To handle the last item
 }
 
@@ -62,7 +60,7 @@ function Timeline() {
         time="2 Hours Ago"
         title="Sent to Thomas"
         description="Hi How are you today Thomas. Did you feel ......"
-        isLast={true} // Set isLast to true for the last item
+        isLast={true} // Set isLast to true for last item
       />
     </div>
   );

@@ -1,4 +1,3 @@
-import react from 'react'
 import {Badge} from '../ui/badge'
 import {Card} from '../ui/card'
 import overview from '/overview.svg'
@@ -30,7 +29,7 @@ const Sidebar: React.FC = () => {
         </Badge>
         </div>
   
-        {/* Billing Expiration Card */}
+        {/* Billing Expiration */}
         <Card className="bg-red-600 p-4 mb-4">
           <div className="flex justify-between items-center">
             <span className="text-white font-semibold">Billing Expiration</span>
@@ -41,7 +40,7 @@ const Sidebar: React.FC = () => {
           </p>
         </Card>
 
-        {/* Dashboard Card */}
+        {/* Dashboard */}
 
         <section className='flex flex-col gap-4'>
             <p>Dashboard</p>

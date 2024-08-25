@@ -8,7 +8,7 @@ type TodoItem = {
   completed: boolean;
 };
 
-const App: React.FC = () => {
+const DraggableBox: React.FC = () => {
   const [todos, setTodos] = useState<TodoItem[]>([
     { id: 1, text: 'Reminder Item 1', completed: false },
     { id: 2, text: 'Reminder Item 2', completed: false },
@@ -135,4 +135,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default DraggableBox;
