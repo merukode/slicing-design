@@ -10,9 +10,9 @@ type TodoItem = {
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState<TodoItem[]>([
-    { id: 1, text: 'Todo Item 1', completed: false },
-    { id: 2, text: 'Todo Item 2', completed: false },
-    { id: 3, text: 'Todo Item 3', completed: false },
+    { id: 1, text: 'Reminder Item 1', completed: false },
+    { id: 2, text: 'Reminder Item 2', completed: false },
+    { id: 3, text: 'Reminder Item 3', completed: false },
   ]);
   
   const [newTodoText, setNewTodoText] = useState<string>('');
@@ -61,14 +61,14 @@ const App: React.FC = () => {
             type="text"
             value={newTodoText}
             onChange={handleInputChange}
-            placeholder="Enter new todo"
+            placeholder="Enter new reminder"
             className="border p-2 rounded w-full"
           />
           <button 
             onClick={handleAddTodo}
             className="mt-2 bg-green-500 text-white px-4 py-2 rounded"
           >
-            Add Todo
+            Add Reminder
           </button>
         </div>
       )}

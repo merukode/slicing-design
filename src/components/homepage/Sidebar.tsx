@@ -25,7 +25,7 @@ const Sidebar: React.FC = () => {
         <h1 className="text-2xl font-bold mb-4">WhatsTrack</h1>
         
         {/* Pro Badge */}
-        <Badge className="rounded-full border-yellow-500 border-2 text-yellow-500 px-2 py-1 mb-4">
+        <Badge className="rounded-full border-yellow-500 bg-yellow-100 border-2 text-yellow-500 px-4 py-1 mb-4">
           Pro
         </Badge>
         </div>
@@ -47,9 +47,10 @@ const Sidebar: React.FC = () => {
             <p>Dashboard</p>
             <div>
                 <ul className='ml-10 mt-3 flex flex-col gap-4'>
-                    <li className='flex gap-4'>
+                    <li className='flex bg-[#BBFFD6] p-3 rounded-xl gap-4'>
                         <img src={overview} alt="overview" />
-                        <span>Overview</span>
+                        <span className='
+                        font-bold text-[#00C9B1]'>Overview</span> 
                     </li>
                     <li className='flex gap-4'>
                         <img src={analitik} alt="analitik" />

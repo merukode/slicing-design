@@ -30,7 +30,7 @@ function Layout() {
             {/* Navbar */}
             <section className='bg-[#01C8B1] p-2 '>
                 <span className='flex gap-11  justify-end'>
-                    <img src={profile} alt="profile" />
+                    <img className='fill-white' src={profile} alt="profile" />
                     <img src={setting} alt="profile" />
                     <img src={template} alt="profile" />
                     <div className='flex items-center gap-2 rounded-full p-4 bg-[#BAFEF6]'>
@@ -44,7 +44,7 @@ function Layout() {
             </section>
             {/* Hero Section */}
             <section style={{ backgroundImage: 'url(/background.png)' }} className='bg-cover bg-center w-full p-10'>
-                <h1 className='underline text-5xl'>Here's What All <br /> You Need</h1>
+                <h1 className='underline text-5xl font-bold font'>Here's What All <br /> You Need</h1>
                 <div className='mt-24 flex justify-between'>
                     <Card className='w-96 p-3'>
                         <span className='flex justify-between mb-8'>
@@ -81,7 +81,7 @@ function Layout() {
                         <h1 className='font-bold'>CONVERSATION</h1>
                         <Progress value={progress} className='w-[60p%] mb-8 mt-5' />
                         <span className='flex justify-between'>
-                            <p>20 Messages</p>
+                            <p>20 Conversation</p>
                         </span>
                     </Card>
 
@@ -94,13 +94,13 @@ function Layout() {
                         <h1 className='font-bold'>OUTBBOND MESSAGE</h1>
                         <Progress value={progress} className='w-[60p%] mb-8 mt-5' />
                         <span className='flex justify-between'>
-                            <p>20 Messages</p>
+                            <p>35% Percent</p>
                         </span>
                     </Card>
                 </div>
             </section>
             {/* Below Section */}
-            <section className='px-8 py-5'>
+            <section className='px-8 py-5 mb-14'>
                 {/* Messaging Header */}
                 <span className='flex gap-5'>
                     <h1 className='text-2xl font-bold'>Messaging</h1>
@@ -161,6 +161,11 @@ function Layout() {
                     </article>
                 </div>
             </section>
+            {/* Footer */}
+            <footer className='bg-gray-500 px-6 py-8 flex justify-between text-white'>
+                <p>Copyright@2021 WhatsTrack.com</p>
+                <p>Powered By Zegen.id</p>
+            </footer>
         </main>
     )
 }
